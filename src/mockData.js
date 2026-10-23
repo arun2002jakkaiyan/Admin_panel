@@ -1,0 +1,170 @@
+export const initialDealers = [
+  {
+    id: "deal-301",
+    name: "Vikram Patel",
+    email: "vikram.aquatech@gmail.com",
+    phone: "+91 98220 54321",
+    businessName: "Patel RO Solutions & Services",
+    gstNumber: "24BBBBB0000A1Z9",
+    shopAddress: "Station Road, Anand, Gujarat - 388001",
+    status: "pending",
+    appliedAt: "2026-10-22T10:30:00Z",
+    annualTurnoverEstimate: "₹18,00,000",
+    notes: "Requires bulk supply of 75/100 GPD membranes and Kemflo booster pumps."
+  },
+  {
+    id: "deal-302",
+    name: "Rameshwar Sen",
+    email: "sen.watertech@outlook.com",
+    phone: "+91 98300 11223",
+    businessName: "Sen Aqua Care Retailers",
+    gstNumber: "19AAAAA1111B1Z2",
+    shopAddress: "45/2 Chittaranjan Avenue, Kolkata, WB - 700012",
+    status: "pending",
+    appliedAt: "2026-10-23T08:15:00Z",
+    annualTurnoverEstimate: "₹25,00,000",
+    notes: "Distributor for residential RO water purifiers and spun filters."
+  },
+  {
+    id: "deal-201",
+    name: "Rajesh Sharma",
+    email: "rajesh.dealers@purifiers.in",
+    phone: "+91 94440 12345",
+    businessName: "Sharma AquaTech & Spare Distributors",
+    gstNumber: "27AAPFU1234F1Z5",
+    shopAddress: "Plot 42, Industrial Area Phase 2, New Delhi - 110020",
+    status: "approved",
+    appliedAt: "2026-10-18T14:20:00Z",
+    approvedAt: "2026-10-19T11:00:00Z",
+    annualTurnoverEstimate: "₹50,00,000",
+    notes: "Verified GST and shop front photo. Approved for 35% wholesale catalog discount."
+  },
+  {
+    id: "deal-303",
+    name: "Mohan Lal",
+    email: "mohan.fakegst@test.com",
+    phone: "+91 91234 56789",
+    businessName: "Mohan Hardware",
+    gstNumber: "INVALID_GST_SAMPLE",
+    shopAddress: "Unknown street",
+    status: "rejected",
+    appliedAt: "2026-10-15T09:00:00Z",
+    rejectionReason: "Invalid GST number provided. Could not verify business identity.",
+    annualTurnoverEstimate: "N/A"
+  }
+];
+
+export const initialOrders = [
+  {
+    id: "ORD-72914",
+    customerName: "Arun Kumar",
+    customerEmail: "arun.customer@aquaflow.com",
+    customerPhone: "+91 98765 43210",
+    shippingAddress: "Flat 402, Green Meadows, Sector 14, New Delhi - 110001",
+    orderType: "retail",
+    itemsCount: 1,
+    itemsSummary: "1x AquaFlow Grand Copper RO Purifier",
+    amount: 15999,
+    status: "Dispatched",
+    paymentMethod: "Razorpay (UPI)",
+    paymentId: "pay_test_92kLpM41",
+    date: "2026-10-22T14:30:00Z",
+    trackingId: "BLUEDART-8821092"
+  },
+  {
+    id: "ORD-99103",
+    customerName: "Rajesh Sharma (Sharma AquaTech)",
+    customerEmail: "rajesh.dealers@purifiers.in",
+    customerPhone: "+91 94440 12345",
+    shippingAddress: "Plot 42, Industrial Area Phase 2, New Delhi - 110020",
+    orderType: "bulk_dealer",
+    itemsCount: 10,
+    itemsSummary: "10x Kemflo 75 GPD Booster Pump (Wholesale Pack)",
+    amount: 11500,
+    status: "Delivered",
+    paymentMethod: "Razorpay (NetBanking)",
+    paymentId: "pay_test_01jK98Lm",
+    date: "2026-10-20T11:00:00Z",
+    trackingId: "DELHIVERY-7719203"
+  },
+  {
+    id: "ORD-84021",
+    customerName: "Priya Sundaram",
+    customerEmail: "priya.s@gmail.com",
+    customerPhone: "+91 98401 22334",
+    shippingAddress: "12, 4th Cross, Indiranagar, Bengaluru - 560038",
+    orderType: "retail",
+    itemsCount: 2,
+    itemsSummary: "1x PureLife Alkaline Pro RO + 1x Spun Sediment Pack",
+    amount: 15498,
+    status: "Confirmed",
+    paymentMethod: "Razorpay (Credit Card)",
+    paymentId: "pay_test_54pQrS99",
+    date: "2026-10-23T06:10:00Z",
+    trackingId: "Pending Allocation"
+  },
+  {
+    id: "ORD-84022",
+    customerName: "Balaji Water Solutions",
+    customerEmail: "balaji.spares@yahoo.com",
+    customerPhone: "+91 97890 44556",
+    shippingAddress: "Warehouse 3, Guindy Industrial Estate, Chennai - 600032",
+    orderType: "bulk_dealer",
+    itemsCount: 25,
+    itemsSummary: "15x Dow Filmtec 75 GPD + 10x 24V SMPS Adapters",
+    amount: 21900,
+    status: "Confirmed",
+    paymentMethod: "Razorpay (UPI QR)",
+    paymentId: "pay_test_33aBcDe7",
+    date: "2026-10-23T09:45:00Z",
+    trackingId: "Pending Allocation"
+  }
+];
+
+export const initialServiceRequests = [
+  {
+    id: "SRV-8102",
+    customerName: "Arun Kumar",
+    customerPhone: "+91 98765 43210",
+    address: "Flat 402, Green Meadows, Sector 14, New Delhi",
+    serviceType: "Filter Replacement & General Service",
+    purifierBrand: "AquaFlow Grand",
+    date: "Today, 02:00 PM - 05:00 PM",
+    problem: "TDS output reading rose to 280 ppm. Sediment filter looks brown.",
+    status: "Assigned",
+    technicianName: "Manoj Kumar",
+    technicianPhone: "+91 98111 23456",
+    otp: "5821",
+    cost: 399
+  },
+  {
+    id: "SRV-8105",
+    customerName: "Sunita Roy",
+    customerPhone: "+91 98310 99887",
+    address: "Tower 2, Apt 8B, Silver Palms, Kolkata",
+    serviceType: "Annual Maintenance Contract (AMC)",
+    purifierBrand: "Kent Grand",
+    date: "Tomorrow, 10:00 AM - 01:00 PM",
+    problem: "Annual comprehensive service renewal and membrane chemical sanitization.",
+    status: "Scheduled",
+    technicianName: "Unassigned",
+    technicianPhone: "N/A",
+    otp: "3194",
+    cost: 1999
+  },
+  {
+    id: "SRV-8106",
+    customerName: "Deepak Chawla",
+    customerPhone: "+91 98100 55443",
+    address: "House 18, Block C, Vasant Vihar, New Delhi",
+    serviceType: "Breakdown Repair & Motor Check",
+    purifierBrand: "Commercial 50 LPH Plant",
+    date: "Today, 04:00 PM - 06:00 PM",
+    problem: "Booster pump vibrating loudly with low water pressure.",
+    status: "Assigned",
+    technicianName: "Rahul Verma",
+    technicianPhone: "+91 98765 11223",
+    otp: "8821",
+    cost: 299
+  }
+];
